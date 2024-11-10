@@ -1,0 +1,229 @@
+* * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #CBDCEB; /* Light Cream Background */
+    color: #133E87; /* Dark Gray Text */
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #FFF9E6; /* Creamy white background for the form */
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.header {
+    background-color: #133E87; /* Black Header */
+    color: #FFF; /* White text */
+    padding: 20px;
+    border-radius: 12px 12px 0 0;
+}
+
+.tagline {
+    font-size: 1.1em;
+    color: hwb(0 100% 0%);
+}
+
+.upload-form {
+    margin: 20px 0;
+}
+
+.file-label,
+.language-label {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333; /* Black label color */
+}
+
+.file-input {
+    display: none;
+}
+
+.file-input + .file-label {
+    background-color: #333; /* Black button */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.file-input:focus + .file-label,
+.file-input + .file-label:hover {
+    background-color: #444; /* Darker black on hover */
+}
+
+.language-select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #FFF;
+    color: #333;
+    cursor: pointer;
+}
+
+.language-select:hover,
+.language-select:focus {
+    border-color: #133E87;
+}
+
+.upload-button {
+    background-color: #133E87; /* Blue button */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.upload-button:hover {
+    background-color: #444; /* Darker blue on hover */
+}
+
+.footer {
+    margin-top: 20px;
+    font-size: 0.7em;
+    color: #000000; /* Light gray footer text */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* Container styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #B0D8F1; /* Light Blue Background */
+    color: #133E87; /* Dark Gray Text */
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #FFF9E6; /* Creamy white background for the form */
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Buttons and form elements */
+.upload-btn, .download-btn, .process-another {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 15px;
+    text-decoration: none;
+}
+
+.process-another {
+    background-color: #6c757d;
+}
+
+.file-input input[type="file"] {
+    display: none;
+}
+
+.file-input span {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Result Section Styling */
+.result {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #FFF9E6; /* Same cream background as the form */
+    border: 2px solid #133E87; /* Dark blue border */
+    border-radius: 8px;
+    color: #133E87; /* Dark blue text */
+}
+
+.result h2 {
+    font-size: 1.5em;
+    color: #133E87; /* Dark Blue text for headers */
+    margin-bottom: 10px;
+}
+
+.result p {
+    color: #133E87; /* Dark blue for text */
+    margin-bottom: 15px;
+}
+
+/* Download Links Styling */
+.download-links a {
+    display: inline-block;
+    color: #FFF; /* White text for buttons */
+    background-color: #133E87; /* Blue button background */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    margin-right: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.download-links a:hover {
+    background-color: #444; /* Darker on hover */
+}
+
+/* Back Button Styling */
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    color: #FFF; /* White text */
+    background-color: #6c757d; /* Gray background */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #444; /* Darker gray on hover */
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

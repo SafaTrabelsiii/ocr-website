@@ -1,0 +1,40 @@
+{% load static %} <!-- Load the static files tag -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCR Image Uploader</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>✨ OCR Image Uploader ✨</h1>
+            <p class="tagline">Unlock the text hidden in your images!</p>
+        </div>
+        <form method="post" enctype="multipart/form-data" class="upload-form">
+            {% csrf_token %}
+            
+            <!-- Language Selection Dropdown -->
+            <label for="language">Select Language:</label>
+            <select name="language" id="language" class="language-select" required>
+                <option value="eng" selected>English</option>
+                <option value="ara">Arabic</option>
+            </select>
+            
+            <label for="image" class="file-label">Choose an image to upload</label>
+            <input type="file" name="image" id="image" accept="image/*" required class="file-input">
+            
+            <button type="submit" class="upload-button">Extract Text</button>
+        </form>
+        <div class="footer">
+            <p>Supported formats: <strong>JPEG, PNG, BMP</strong></p>
+        </div>
+    </div>
+</body>
+</html>

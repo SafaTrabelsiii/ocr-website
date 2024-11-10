@@ -1,0 +1,33 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCR Result</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>✨ OCR Image Uploader ✨</h1>
+            <p class="tagline">Unlock the text hidden in your images!</p>
+        </div>
+
+        <div class="result">
+            <h2>Extracted Text</h2>
+            <p>{{ text }}</p>
+            <p>Click the links below to download the extracted text:</p>
+
+            <div class="download-links">
+                <a href="{% url 'download_text' filename=text_filename format='txt' %}">Download as .txt</a>
+                <a href="{% url 'download_text' filename=json_filename format='json' %}">Download as .json</a>
+            </div>
+        </div>
+
+        <a href="{% url 'ocr_view' %}" class="back-button">Back to Upload</a>
+    </div>
+</body>
+</html>
