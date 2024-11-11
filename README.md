@@ -60,7 +60,8 @@ pyhton manage.py migrate
 ```
 7. Run the server 
 ```bash 
-python manage.py runserver 
+python manage.py runserver
+```
 
 ## Usage
 Navigate to [http://127.0.0.1:8000/ocr/](http://127.0.0.1:8000/ocr/) in your web browser to access the OCR website.
